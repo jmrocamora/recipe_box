@@ -1,7 +1,7 @@
 !!! 5
 %html
 %head
-	%title App Recetas
+	%title Recetario
 	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true
 	= csrf_meta_tags
@@ -12,7 +12,7 @@
 			.navbar-brand= link_to "Listado de Recetas", root_path
 
 			%ul.nav.navbar-nav.navbar-right
-				%li= link_to "Receta", new_recipe_path
+				%li= link_to "Nueva Receta", new_recipe_path
 				%li= link_to "Desconectar", root_path
 	.container
 		- flash.each do |name, msg|
